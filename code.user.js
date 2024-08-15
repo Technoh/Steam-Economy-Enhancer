@@ -2527,7 +2527,7 @@
                         ? '∞'
                         : formatPrice(market.getPriceIncludingFees(sellPrice));
 
-                    const elementName = `${(currentPage == PAGE_TRADEOFFER ? '#item' : '#')}${item.appid}_${item.contextid}_${item.id}`;
+                    const elementName = `${(currentPage == PAGE_TRADEOFFER ? '.trade_slot.has_item #item' : '#')}${item.appid}_${item.contextid}_${item.id}`;
                     const element = $(elementName);
 
                     $('.inventory_item_price', element).remove();
